@@ -41,7 +41,7 @@ Example: https://www.instagram.com/explore/tags/cuteDogs/
 
 ![screen shot 2016-05-22 at 10 54 57 am](https://cloud.githubusercontent.com/assets/7760/15454321/ce648516-200b-11e6-9e3e-ec2ce08883fe.png)
 
-**3.** Select the "Network" tab and refresh the page. Then look for the ```query/```
+**3.** Select the "Network" tab and refresh the page. Then look for the first ```query/```
 request line:
 
 ![screen shot 2016-05-22 at 11 00 50 am](https://cloud.githubusercontent.com/assets/7760/15454341/7f1f053e-200c-11e6-9ad8-694cd1c83687.png)
