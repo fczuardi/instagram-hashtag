@@ -7,9 +7,9 @@ QUERY="ig_hashtag($HASHTAG)"
 # you can use the "Copy as curl" option of the developer tools
 # You must fill the strings below for this script to work
 #
-STARTCURSOR=""
-XCSRFTOKENHEADER=""
 COOKIEHEADER=""
+XCSRFTOKENHEADER=""
+STARTCURSOR=""
 
 function getPage {
 
