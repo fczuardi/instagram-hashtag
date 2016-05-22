@@ -1,5 +1,5 @@
 #!/bin/sh
-HASHTAG="visaourbanaiz"
+HASHTAG="cuteDogs"
 PAGESIZE="33"
 QUERY="ig_hashtag($HASHTAG)"
 
