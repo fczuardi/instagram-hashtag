@@ -46,7 +46,7 @@ request line:
 
 ![screen shot 2016-05-22 at 11 00 50 am](https://cloud.githubusercontent.com/assets/7760/15454341/7f1f053e-200c-11e6-9ad8-694cd1c83687.png)
 
-**4.** Click on that line and it on the Headers tab you will find the content that you will have to fill-in on the ```hack.sh``` script
+**4.** Click on that line and on the Headers tab you will find the content that you will have to fill-in on the ```hack.sh``` script
 
 ![screen shot 2016-05-22 at 11 10 21 am](https://cloud.githubusercontent.com/assets/7760/15454404/30a708aa-200e-11e6-889e-7044408336af.png)
 
