@@ -7,6 +7,10 @@ for fileName in $( find "$dirName" -name '*.jpg' ) ; do
     newName=$(cat "$csvFile" \
         | grep "$baseName" \
         | sed -e "s/\([^\,]*\),\([^\,]*\),\([^,]*\),\(.*\)/$dirName\/\2_\3_\4_\1/g")
-    echo "renaming $fileName to $newName"
-    mv "$fileName" "$newName"
+    if [ -n "$newName" ]; then
+        echo "renaming $fileName to $newName"
+        mv "$fileName" "$newName"
+    else
+        echo "Couldnt found metadata for $fileName"
+    fi
 done;
