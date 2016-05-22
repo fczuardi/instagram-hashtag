@@ -2,5 +2,3 @@ secrets.sh
 test
 json/*
 urls.txt
-curl-urls.txt
-metadata.csv
