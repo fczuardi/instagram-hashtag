@@ -10,18 +10,18 @@ It can be useful for:
 - photo contests, where you need to send the jury, or print all photos with
 the content's hashtag with the highest resolution
 - backup pictures
-- workaround the bad Instagram API that has a very limited "tags" endpoint
+- workaround the bad [Instagram API][instagramapi] that, as of v1, has a [very limited "tags" endpoint](https://www.instagram.com/developer/endpoints/tags/#get_tags_media_recent)
 
 ### Disclaimer
 
 Backup, export or download Instagram photos might have copyright implications.
 
-Also, using any of the shell scripts provided here might be a violation of
-Instagram's Terms of Services, I don't know and I don't care.
+Also, using any of the shell scripts provided here **might** be a violation of
+[Instagram's Terms of Use](https://help.instagram.com/478745558852511), I don't know and I don't care.
 
 Please read Instaram's restrictions carefully, read the source code carefully and understand all the risks and consequences before trying it.
 
-Always use their official API whenever possible. This hack is a hack with no guarantees whatsoever that it will work today or that it will continue to work in the future.
+Always use [their official API][instagramapi] whenever possible. This hack is a hack with no guarantees whatsoever that it will work today or that it will continue to work in the future.
 
 Use it for study, for personal uses, and at your own risk.
 
@@ -97,3 +97,6 @@ This repo also contain a script for generating a **.csv** file based on the meta
 Copyright (c) 2016 Fabricio C Zuardi
 
 This software is distributed under the [GNU AFFERO GENERAL PUBLIC LICENSE version 3][license].
+
+[instagramapi]: https://www.instagram.com/developer/
+[license]: https://raw.githubusercontent.com/fczuardi/instagram-hashtag/master/LICENSE
