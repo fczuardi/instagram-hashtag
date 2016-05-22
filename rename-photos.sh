@@ -1,7 +1,8 @@
 #!/bin/sh
 dirName=${1-.}
 csvFile=${2-metadata.csv}
-for fileName in $( ls -1t "$dirName"/*.jpg ) ; do
+
+for fileName in $( find "$dirName" -name '*.jpg' ) ; do
     baseName=$(basename $fileName)
     newName=$(cat "$csvFile" \
         | grep "$baseName" \
