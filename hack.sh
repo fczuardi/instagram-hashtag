@@ -1,6 +1,7 @@
 #!/bin/sh
 HASHTAG="cuteDogs"
 PAGESIZE="33"
+OUTPUTDIR="json"
 QUERY="ig_hashtag($HASHTAG)"
 
 # Get the values below opening the hashtag page on a browser and inspecting the first /query request
@@ -26,6 +27,13 @@ function getPage {
             {
                 nodes {
                     code,
+                    id,
+                    comments {
+                        count
+                    },
+                    likes {
+                        count
+                    },
                     date,
                     display_src,
                     owner {
@@ -41,7 +49,8 @@ function getPage {
 }
 
 START="$STARTCURSOR"
-OUTPUTFILE="json/$START.json"
+mkdir -p "$OUTPUTDIR"
+OUTPUTFILE="$OUTPUTDIR/$START.json"
 getPage "$START" "$OUTPUTFILE"
 HASNEXTPAGE=$(jq ".media.page_info.has_next_page" "$OUTPUTFILE")
 
